@@ -16,4 +16,8 @@ router.route("/trending").get(getTrending);
 const getCheapest = require("../../controller/tours/getCheapest");
 router.route("/cheapest").get(getCheapest);
 
+//get one tour by id
+const getOneTourById = require("../../controller/tours/getOneTourById");
+router.route("/:id").get(getOneTourById);
+
 module.exports = router;
