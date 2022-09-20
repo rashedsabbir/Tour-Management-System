@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // schema
-const toursShema = mongoose.Schema(
+const toursSchema = mongoose.Schema(
   {
     name: {
       type: String,
@@ -63,6 +63,6 @@ const toursShema = mongoose.Schema(
 );
 
 // Model
-const Tours = mongoose.model("Tours", toursShema);
+const Tours = mongoose.model("Tours", toursSchema);
 
 module.exports = Tours;

@@ -18,6 +18,10 @@ router.route("/cheapest").get(getCheapest);
 
 //get one tour by id
 const getOneTourById = require("../../controller/tours/getOneTourById");
-router.route("/:id").get(getOneTourById);
+//update tour by id
+const updateById = require("../../controller/tours/updateById");
+router.route("/:id").get(getOneTourById).patch(updateById);
+
+
 
 module.exports = router;
