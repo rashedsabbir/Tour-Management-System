@@ -12,4 +12,8 @@ router.route("/").get(getAllTours).post(createTour);
 const getTrending = require("../../controller/tours/getTrending");
 router.route("/trending").get(getTrending);
 
+//get cheapest tour
+const getCheapest = require("../../controller/tours/getCheapest");
+router.route("/cheapest").get(getCheapest);
+
 module.exports = router;
